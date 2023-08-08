@@ -1,0 +1,30 @@
+/* En PokemonDetails.css */
+.pokemon-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .pokemon-image {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .pokemon-details {
+    margin-top: 20px;
+  }
+  
+  .pokemon-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .pokemon-type .type-circle {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  

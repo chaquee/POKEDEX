@@ -1,38 +1,238 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  padding: 20px;  
+}
+
+.form-container {
+  flex: 0.2;
+    display: flex;
+    align-items: center; 
+    width: 200px; 
+    list-style: none;
+    padding: 10px;
+    margin: 1px;
+    text-align: right;
+}
+
+  h1 {
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    
+  }
+  form {
+    margin-bottom: 10px;
+  }
+  #pokemonInfo {
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }  
+  img {
+    max-width: 150px;
+  }
+
+  .right-column p {
+    font-size: 20px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+
+  .type-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 10px;
+  }
+
+  .type-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    position: relative; /* Agrega esta línea para establecer posición relativa */
+  }
+
+  .circle-content {
+    position: relative;
+  }
+
+  
+.circle-text {
+  position: absolute;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  .myPokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-top: 20px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .myPokemonList li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 200px; 
+    list-style: none;
+    padding: 10px;
+    margin: 1px;
+    border: 5px solid #a19d9d;
+    border-radius: 20px;
+    text-align: right;
+    background-color: #dcdbd5;
   }
-  to {
-    transform: rotate(360deg);
+
+  .myPokemonList img {
+    max-width: 100px;
+    margin-bottom: 0px;
   }
+
+  .myPokemonList button {
+    margin-top: 10px;
+  }
+
+  .container {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: rgb(240, 240, 233);
+  }
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    
+   }
+  
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   }
+  
+  .buttom-column {
+    border-top: black ;
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+   }
+
+   
+
+  .h2 {
+    font-size: 24px; /* Cambia el tamaño de fuente al valor deseado */
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    margin: 0px;
+  }
+    .myPokemonList li p {
+      font-size: 20px;
+      font-family: "Trebuchet MS", Verdana, sans-serif;
+      text-align: center;
+      margin-top: 0px;
+    }
+
+  .button-atrapar{
+    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    :hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+    
+  }
+
+  .button-ok{
+    
+    margin: 5px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 12px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: rgb(251, 251, 251);
+    color: rgb(55, 55, 55);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    :hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+    
+  }
+
+  
+
+  .input-styled{
+    
+    width: 160px;
+    color: rgb(36, 35, 42);
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 28px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+    background: rgb(251, 251, 251);
+    transition: all 0.1s ease 0s;
+    :focus{
+        border: 2px solid rgb(124, 138, 255);
+    }
+
+  }
+  
+    
+ /* En App.css */
+ .circle-content {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido del círculo esté sobre la imagen */
+}
+.type-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/img/png-transparent-poke-ball-thumbnail.png') no-repeat center center; /* Cambia 'ruta-a-tu-imagen' por la ruta correcta a tu imagen */
+  background-size: contain; /* Ajusta el tamaño de la imagen de la pokebola */
+  opacity: 0.15; /* Ajusta la opacidad de la imagen */
 }
